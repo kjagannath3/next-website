@@ -18,9 +18,13 @@ export function BlurbName() {
 }
 
 export function ProjectsList() {
+    const numbers = [1, 2, 3, 4, 5];
+    const listOfNums = numbers.map((number) => {
+        return <li>{number}</li>;
+    });
     return (
         <div>
-            <h1>Insert projects here</h1>
+            <ul>{listOfNums}</ul>
         </div>
     );
 }
