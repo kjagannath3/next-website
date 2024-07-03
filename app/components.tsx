@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+
+
 export function NameIcon() {
     return (
         <div>
@@ -12,7 +15,14 @@ export function BlurbName() {
     return (
         <div>
             <h1>Insert blurb here</h1>
-            <h1>Insert Image here</h1>
+            <Image
+                src="/headshot.jpg"
+                width={500}
+                height={500}
+                alt="Picture of myself"
+
+
+            />
         </div>
     );
 }
