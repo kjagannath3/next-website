@@ -1,6 +1,4 @@
-import React from "react";
 import Image from "next/image";
-
 
 export function NameIcon() {
     return (
@@ -14,14 +12,20 @@ export function NameIcon() {
 export function BlurbName() {
     return (
         <div>
-            <h1>Insert blurb here</h1>
+            <h1>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </h1>
             <Image
                 src="/headshot.jpg"
                 width={500}
                 height={500}
                 alt="Picture of myself"
-
-
             />
         </div>
     );
@@ -39,11 +43,9 @@ export function ProjectsList() {
     );
 }
 
-export function ResumeEmbed() {
+export function ResumeEmbed() { 
     return (
-        <div>
-            <h1>Insert resume here</h1>
-        </div>
+        <div>Insert Resume here</div>
     );
 }
 
