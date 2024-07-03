@@ -1,8 +1,14 @@
 import Image from "next/image";
-import { NameIcon } from "./components";
+import { BlurbName, CallToAction, NameIcon, ProjectsList, ResumeEmbed } from "./components";
 
 export default function Home() {
-  return (
-  <NameIcon />
-  );
+    return (
+        <>
+            <NameIcon />
+            <BlurbName />
+            <ProjectsList />
+            <ResumeEmbed />
+            <CallToAction />
+        </>
+    );
 }
