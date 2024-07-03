@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BlurbName, CallToAction, NameIcon, ProjectsList, ResumeEmbed } from "./components";
+import { BlurbName, CallToAction, NameIcon, ProjectsList,  SpotifyEmbed } from "./components";
 
 export default function Home() {
     return (
@@ -7,7 +7,7 @@ export default function Home() {
             <NameIcon />
             <BlurbName />
             <ProjectsList />
-            <ResumeEmbed />
+            <SpotifyEmbed />
             <CallToAction />
         </>
     );

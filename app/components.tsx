@@ -1,4 +1,11 @@
 import Image from "next/image";
+import { Document, Page, View, Text } from "@react-pdf/renderer";
+
+
+const CLIENT_ID = "SPOTIFY_CLIENT_ID"
+const CLIENT_SECRET = "SPOTIFY_CLIENT_SECRET"
+
+
 
 export function NameIcon() {
     return (
@@ -43,7 +50,7 @@ export function ProjectsList() {
     );
 }
 
-export function ResumeEmbed() { 
+export function SpotifyEmbed() { 
     return (
         <div>Insert Resume here</div>
     );
