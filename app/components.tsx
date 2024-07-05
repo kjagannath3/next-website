@@ -11,22 +11,25 @@ export function NameIcon() {
 
 export function BlurbName() {
   return (
-    <div>
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </h1>
-      <Image
-        src="/headshot.jpg"
-        width={500}
-        height={500}
-        alt="Picture of myself"
-      />
+    <div className="flex w-full justify-center items-center h-screen place-content-end ">
+      <div className="flex w-3/4">
+        <h1 className="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </h1>
+        <Image
+          className=""
+          src="/headshot.jpg"
+          width={100}
+          height={100}
+          alt="Picture of myself"
+        />
+      </div>
     </div>
   );
 }
@@ -37,20 +40,29 @@ export function ProjectsList() {
     return <li>{number}</li>;
   });
   return (
-    <div>
-      <ul>{listOfNums}</ul>
+    <div className="flex w-1/2 justify-center items-center h-screen place-content-end h-screen">
+      {" "}
+      <div>
+        <ul>{listOfNums}</ul>
+      </div>
     </div>
   );
 }
 
 export function ResumeEmbed() {
-  return <div>Insert Resume here</div>;
+  return (
+    <div className="flex w-1/2 justify-center items-center h-screen place-content-end h-screen">
+      <div>Insert Resume here</div>
+    </div>
+  );
 }
 
 export function CallToAction() {
   return (
-    <div>
-      <h1> Insert call to action here </h1>
+    <div className="flex w-1/2 justify-center items-center h-screen place-content-end h-screen">
+      <div>
+        <h1> Insert call to action here </h1>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { BlurbName, CallToAction, NameIcon, ProjectsList, ResumeEmbed } from "./
 
 export default function Home() {
     return (
-        <div className="bg-sky-100">
+        <div className="bg-sky-100 content-center">
             <NameIcon />
             <BlurbName />
             <ProjectsList />
