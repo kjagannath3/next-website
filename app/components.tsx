@@ -11,8 +11,8 @@ export function NameIcon() {
 
 export function BlurbName() {
   return (
-    <div className="flex w-full justify-center items-center h-screen place-content-end ">
-      <div className="flex w-3/4">
+    <div className="flex w-full justify-center items-center h-screen  ">
+      <div className="flex px-20 py-40 w-3/4 fill-red-100 border-4 border-slate-300 rounded-3xl"> 
         <h1 className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -40,7 +40,7 @@ export function ProjectsList() {
     return <li>{number}</li>;
   });
   return (
-    <div className="flex w-1/2 justify-center items-center h-screen place-content-end h-screen">
+    <div className="flex w-1/2 border-solid justify-center items-center h-screen place-content-end h-screen">
       {" "}
       <div>
         <ul>{listOfNums}</ul>
