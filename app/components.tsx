@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export function NameIcon() {
   return (
-    <div className="flex w-full place-content-center gap-2">
-      <h1 className="font-bold">Hi, I'm </h1>
-      <h1>Keshav</h1>
+    <div className="pt-10 flex w-full place-content-center gap-2">
+      <h1 className="text-5xl text-inherit font-bold">Hi, I'm </h1>
+      <h1 className="font-bold text-5xl text-green-300">Keshav</h1>
     </div>
   );
 }
@@ -12,15 +12,11 @@ export function NameIcon() {
 export function BlurbName() {
   return (
     <div className="flex w-full justify-center items-center h-screen  ">
-      <div className="flex px-20 py-40 w-3/4 fill-red-100 border-4 border-slate-300 rounded-3xl"> 
+      <div className="flex px-20 py-20 w-3/4 fill-red-100 border-4 border-slate-300 rounded-3xl">
         <h1 className="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Glad you could make it to my website! I'm a fourth year CS major at
+          Georgia Tech with concentrations in Intelligence and IOT. Check out my
+          projects and my resume!
         </h1>
         <Image
           className=""
