@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { NeuralNet, DistortionPedal } from "./projectInfo";
 
 export function NameIcon() {
   return (
@@ -31,15 +32,20 @@ export function BlurbName() {
 }
 
 export function ProjectsList() {
-  const numbers = [1, 2, 3, 4, 5];
-  const listOfNums = numbers.map((number) => {
-    return <li>{number}</li>;
-  });
   return (
-    <div className="flex w-1/2 border-solid justify-center items-center h-screen place-content-end h-screen">
-      {" "}
-      <div>
-        <ul>{listOfNums}</ul>
+    <div className="grid w-full justify-center items-center h-screen">
+      <div className="grid w-full px-60 border-solid border-4 border-slate-300 rounded-3xl">
+        {" "}
+        <h1 className="text-5xl text-inherit font-bold">
+          {" "}
+          Take a look at some of my projects!
+        </h1>
+        <div className="flex">
+          <ul className="flex">
+            <NeuralNet />
+            <DistortionPedal />
+          </ul>
+        </div>
       </div>
     </div>
   );
