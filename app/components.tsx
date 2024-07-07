@@ -30,28 +30,39 @@ export function BlurbName() {
   );
 }
 
+ 
+export function Project() {
+    
+
+} 
 export function ProjectsList() {
   const numbers = [1, 2, 3, 4, 5];
   const listOfNums = numbers.map((number) => {
     return <li>{number}</li>;
   });
   return (
-        <div className="grid w-full justify-center items-center h-screen">
-    <div className="grid w-full px-60 border-solid border-4 border-slate-300 rounded-3xl">
-      {" "}
-    <h1 className="text-5xl text-inherit font-bold"> Take a look at some of my projects!</h1>
-      <div>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>2</li>
-                    <li>2</li>
-                    <li>2</li>
-                </ul>
+    <div className="grid w-full justify-center items-center h-screen">
+      <div className="grid w-full px-60 border-solid border-4 border-slate-300 rounded-3xl">
+        {" "}
+        <h1 className="text-5xl text-inherit font-bold">
+          {" "}
+          Take a look at some of my projects!
+        </h1>
+        <div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+        </div>
       </div>
-    </div></div>
+    </div>
   );
 }
+
+
 
 export function ResumeEmbed() {
   return (
