@@ -36,12 +36,20 @@ export function ProjectsList() {
     return <li>{number}</li>;
   });
   return (
-    <div className="flex w-1/2 border-solid justify-center items-center h-screen place-content-end h-screen">
+        <div className="grid w-full justify-center items-center h-screen">
+    <div className="grid w-full px-60 border-solid border-4 border-slate-300 rounded-3xl">
       {" "}
+    <h1 className="text-5xl text-inherit font-bold"> Take a look at some of my projects!</h1>
       <div>
-        <ul>{listOfNums}</ul>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>2</li>
+                    <li>2</li>
+                    <li>2</li>
+                </ul>
       </div>
-    </div>
+    </div></div>
   );
 }
 
