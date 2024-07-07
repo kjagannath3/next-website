@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NeuralNet } from "./projectInfo";
+import { NeuralNet, DistortionPedal } from "./projectInfo";
 
 export function NameIcon() {
   return (
@@ -41,8 +41,9 @@ export function ProjectsList() {
           Take a look at some of my projects!
         </h1>
         <div className="flex">
-          <ul>
-                        <NeuralNet />
+          <ul className="flex">
+            <NeuralNet />
+            <DistortionPedal />
           </ul>
         </div>
       </div>
