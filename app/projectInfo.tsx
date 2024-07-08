@@ -1,7 +1,7 @@
 export function NeuralNet() {
   return (
-    <div className="grid">
-      <h1>Music Neural Network</h1>
+    <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
+      <h1 className="font-bold text-3xl ,">Music Neural Network</h1>
       <h1>I created a neural network for music!</h1>{" "}
       <ul>
         {" Tools Used"}
@@ -14,8 +14,8 @@ export function NeuralNet() {
 
 export function DistortionPedal() {
   return (
-    <div className="grid">
-      <h1> Hardware Distortion Pedal</h1>
+    <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
+      <h1 className="font-bold text-3xl"> Hardware Distortion Pedal</h1>
       <h1> I created a hardware distortion pedal in Arduino and C++</h1>
       <ul>
         {" Tools Used "}
