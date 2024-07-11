@@ -3,9 +3,9 @@ import { NeuralNet, DistortionPedal, CDCRefactor } from "./projectInfo";
 
 export function NameIcon() {
     return (
-        <div className="pt-10 flex w-full place-content-center gap-2">
+        <div className="pt-10 pb-10 flex bg-slate-50 w-full place-content-center gap-2">
             <h1 className="text-5xl text-inherit font-bold">Hi, I'm </h1>
-            <h1 className="font-bold text-5xl text-green-300">Keshav</h1>
+            <h1 className="font-bold text-5xl text-lime-900">Keshav</h1>
         </div>
     );
 }
