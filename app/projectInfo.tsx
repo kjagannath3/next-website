@@ -42,3 +42,24 @@ export function DistortionPedal() {
         
     );
 }
+
+
+export function CDCRefactor() {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
+            <button onClick={() => setIsOpen(true)}>
+                <h1 className="font-bold text-3xl ,">EpiInfo Application Android Refactor</h1>
+            </button>{" "}
+            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
+                <h1>I, along with my Junior design team members helped implement an android version of the CDC's epiInfo application</h1>{" "}
+                <ul>
+                    {" Tools Used"}
+                    <li>Open Source</li> <li>Java</li> <li>Android Studio</li>{" "}
+                </ul>
+                <button onClick={() => setIsOpen(false)}>Close</button>
+            </Modal>
+        </div>
+        
+    );
+}
