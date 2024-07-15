@@ -1,65 +1,28 @@
-"use client";
-import Modal from "react-modal";
-import { useState } from "react";
+// pages/index.tsx
+"use client"
+import React, { useState } from 'react';
+import Modal from './Modal';
 
-export function NeuralNet() {
-    const [isOpen, setIsOpen] = useState(false);
+const NeuralNet: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-    return (
-        <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
-            <button onClick={() => setIsOpen(true)}>
-                <h1 className="font-bold text-3xl ,">Music Neural Network</h1>
-            </button>{" "}
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                <h1>I created a neural network for music!</h1>{" "}
-                <ul>
-                    {" Tools Used"}
-                    <li>Python</li> <li>Tensorflow</li> <li>Numpy</li>{" "}
-                    <li>The Nsynth Dataset</li>
-                </ul>
-                <button onClick={() => setIsOpen(false)}>Close</button>
-            </Modal>
-        </div>
-    );
-}
-
-export function DistortionPedal() {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
-            <button onClick={() => setIsOpen(true)}>
-                <h1 className="font-bold text-3xl ,">Hardware Distortion Pedal</h1>
-            </button>{" "}
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                <h1>I created a hardware distortion pedal in Arduino and C++</h1>{" "}
-                <ul>
-                    {" Tools Used"}
-                    <li>Arduino</li> <li>C++</li> <li>Arduino Audio Tools Library</li>{" "}
-                </ul>
-                <button onClick={() => setIsOpen(false)}>Close</button>
-            </Modal>
-        </div>
-        
-    );
-}
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
 
-export function CDCRefactor() {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className="grid w-full m-24 p-10 border-8 rounded-3xl">
-            <button onClick={() => setIsOpen(true)}>
-                <h1 className="font-bold text-3xl ,">EpiInfo Application Android Refactor</h1>
-            </button>{" "}
-            <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)}>
-                <h1>I, along with my Junior design team members helped implement an android version of the CDC's epiInfo application</h1>{" "}
-                <ul>
-                    {" Tools Used"}
-                    <li>Open Source</li> <li>Java</li> <li>Android Studio</li>{" "}
-                </ul>
-                <button onClick={() => setIsOpen(false)}>Close</button>
-            </Modal>
-        </div>
-        
-    );
-}
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <h1 className="text-4xl mb-4">Welcome to Next.js!</h1>
+      <button onClick={openModal} className="px-4 py-2 bg-blue-600 text-white rounded">Open Modal</button>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2 className="text-2xl mb-4">This is a modal!</h2>
+        <p>Here you can put any content you want.</p>
+      </Modal>
+    </div>
+  );
+};
+
+export default NeuralNet;
+
+
+

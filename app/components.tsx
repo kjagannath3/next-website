@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NeuralNet, DistortionPedal, CDCRefactor } from "./projectInfo";
+import NeuralNet  from "./projectInfo";
 
 export function NameIcon() {
     return (
@@ -43,8 +43,6 @@ export function ProjectsList() {
                 <div className="flex">
                     <ul className="flex">
                         <NeuralNet />
-                        <DistortionPedal />
-                        <CDCRefactor />
                     </ul>
                 </div>
             </div>
